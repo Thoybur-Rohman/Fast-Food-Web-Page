@@ -4,11 +4,73 @@
     padding: 0;
     font-family: sans-serif;
 }
-
-
 .hero{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(./img/BackGround.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
+
+/*------------------------------------------========= NAV BAR SECTION ==========-----------------------------------------------*/
+.nav-bar{
+    
+    display:flex;
+    padding: 20px 110px;    /*using padding it adds space around the nav bar div */
+
+}
+.nav-logo img{
+    margin-top: -40px;
+    width: 200px; /* This is reducing the size of the logo */
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    list-style: none;
+    display: inline;
+}
+.nav-links ul li{
+    margin-top: 10px; /* This alloed me to have it in line with the logo */
+    list-style: none; /* This adds no style to the list  */
+    display:inline-block; /* This adds a block around the nav bar so its in line */
+    padding: 10px 25px;
+}
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: ''; /* This puts an empty content under the links  */
+    width:0;
+    height: 3px;/* Thickness of the line  */
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .7s;/* speed of the transition*/
+}  
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*------------------------------------------========= Button ==========-----------------------------------------------*/
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links .btn{
+    margin-top: 10px;
+    float: right;
+}
+
+/*------------------------------------------========= Banner  ==========-----------------------------------------------*/
+.banner-tittle{
+    margin: 80px 130px;
+    color: #fff;
+}
+
+
