@@ -1,0 +1,14 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(./img/BackGround.jpg);
+    background-size: cover;
+    background-position: center;
+}
