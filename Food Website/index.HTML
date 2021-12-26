@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/all.css">
    
 </head>
-<body>
+<body onload="showMenu()">
     <div class="hero">
         <div class="nav-bar">
-            <nav class="nav-logo">
+            <nav class="nav-logo" id="nav-links">
                 <img src="./img/Logo.png">
             </nav>
             <div class="nav-links">
-                <i class="fa-solid fa-circle-xmark"></i>
+                 <i class="fas fa-bars" oneclick="closeMenu()"></i> 
             <ul>
                 <a href="#"><li>HOME </li></a>
                 <a href="#"><li>ABOUT</li></a>
@@ -23,7 +23,7 @@
             </ul>
             <button type="button" class="btn">SIGN UP</button>
            </div> 
-            <i class="fas fa-bars"></i>  
+            <i class="fas fa-bars" oneclick="showMenu()"></i>  
         </div>
         <div class="banner-tittle">
             <h1>FOOD <span>IS MY LIFE<br>FOOD</span> IS MY LOVE </h1>
@@ -54,6 +54,11 @@
             </div>        
         </div>      
     </div>
+    <script>
+        function showMenu() {
+          show.style.right = 0;
+        }
+    </script>
     
 </body>
 </html>

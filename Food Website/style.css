@@ -32,12 +32,14 @@
     display: inline;
 }
 .nav-links ul li{
+    font-size: 20px;
     margin-top: 10px; /* This alloed me to have it in line with the logo */
     list-style: none; /* This adds no style to the list  */
     display:inline-block; /* This adds a block around the nav bar so its in line */
     padding: 10px 25px;
 }
 .nav-links ul a{
+    
     color: #fff;
     text-decoration: none;
     font-size: 13px;
@@ -88,7 +90,7 @@
     position: absolute; /* */
 }
 .seach-icon{
-    height: 60%;
+    height: 50%;
     width: 80px;
 }
 .seach-icon .fas{
@@ -99,16 +101,17 @@
     cursor: pointer;
 }
 .social-icon{
-    height: 35%;
+    height: 30;
     width: 80px;
     background: yellow;
     text-align: center;
-    padding-top: 27%;
+    padding-top: 20%;
     bottom: 0;
     position: absolute;
   
 }
 .social-icon .fab{
+    
     font-size: medium; /* This making the logos bigger */
     margin: 50px 20px; /* This is adding space betwene all logos and the margin around it*/
     display: block;
@@ -152,9 +155,7 @@
     text-align: right;
     margin-top: 10px;
 }
-.nav-bar .fas{
-    display: none;
-}
+
 /*------------------------------------------========= Meadia ==========-----------------------------------------------*/
 @media(max-width:870px){
     .v-bar{
@@ -167,8 +168,7 @@
         font-size: 50px;
     }
     .notifications{
-        width: 50%;
-        height: 200px;
+        display: none;
     }
     .nav-bar{
         padding: 10px 20px;
@@ -178,16 +178,7 @@
         right: 20px;
         top: 10px;
     }
-    .fa-solid{
-        position: absolute;
-         z-index: 100;
-     }
-    .nav-bar .fa-solid{
-       color: #fff ;
-       margin: 10px 5px;
-        font-size: 22px;
-        cursor: pointer;
-    }    
+    
     .nav-bar .fas {
         display: block;
         color: rgb(250, 250, 250);
@@ -200,10 +191,11 @@
         width: 200px;
         background: #000;
         top: 0;
-        right: 0;
+        right: -200px;
         position: absolute;
         text-align: left;
         z-index: 2;
+        transition: 0.5;
     }
     
     .nav-links ul a {
