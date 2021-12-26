@@ -79,13 +79,13 @@
 .banner-tittle h1 span{
     color: yellow;
 }
-
+/*------------------------------------------========= ICONS   ==========-----------------------------------------------*/
 .v-bar{
-    height: 100%;
-    background: black;
-    top: 0;
-    left: 0;
-    position: absolute;
+    height: 100%; /* This making the bat be all the way down */
+    background: black; 
+    top: 0; /* This making the top be 0 */
+    left: 0; /* This making the side stick to the left with no gap */
+    position: absolute; /* */
 }
 .seach-icon{
     height: 60%;
@@ -98,5 +98,73 @@
     font-size: 30px;
     cursor: pointer;
 }
+.social-icon{
+    height: 35%;
+    width: 80px;
+    background: yellow;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+  
+}
+.social-icon .fab{
+    font-size: medium; /* This making the logos bigger */
+    margin: 50px 20px; /* This is adding space betwene all logos and the margin around it*/
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 50%; /*circulat padding aroud  */
+    cursor: pointer;
+}
+/*------------------------------------------========= NOTIFICATIONS ==========-----------------------------------------------*/
 
+.notifications{  
+    display: flex;
+    width: 220px;
+    right: 0; /* uSING THESE 2 RIGHT AND BOTTOM WE ARE POSITIONING THI AT THE BOTTOMM OF OUR PAGE */
+    bottom: 0;
+    position: absolute;
+    background: yellow;
+    align-items: center;
+    border-radius: 5%;
+    
+}
+.contents{
+    flex-basis: 50%;
+    padding: 10px;
+}
+.notifications-img{
+    flex-basis: 50%;
+}
+.notifications-img img{
+    width: 100%;
+    margin-bottom: 0;   
+}
+/*------------------------------------------========= NOTIFICATIONS ANKER TAGS ==========-----------------------------------------------*/
+.contents a{
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin: 0px 10px ;
+}
+.contents p{
+    text-align: right;
+    margin-top: 10px;
 
+}
+/*------------------------------------------========= Meadia ==========-----------------------------------------------*/
+@media(max-width:700px){
+    .v-bar{
+        display: none;
+    }
+    .banner-tittle{
+        margin: 80px 40px;
+    }
+    .banner-tittle h1{
+        font-size: 50px;
+    }
+    .notifications{
+        width: 100%;
+    }
+}
