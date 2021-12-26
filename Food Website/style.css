@@ -151,10 +151,12 @@
 .contents p{
     text-align: right;
     margin-top: 10px;
-
+}
+.nav-bar .fas{
+    display: none;
 }
 /*------------------------------------------========= Meadia ==========-----------------------------------------------*/
-@media(max-width:700px){
+@media(max-width:870px){
     .v-bar{
         display: none;
     }
@@ -165,6 +167,51 @@
         font-size: 50px;
     }
     .notifications{
-        width: 100%;
+        width: 50%;
+        height: 200px;
+    }
+    .nav-bar{
+        padding: 10px 20px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .fa-solid{
+        position: absolute;
+         z-index: 100;
+     }
+    .nav-bar .fa-solid{
+       color: #fff ;
+       margin: 10px 5px;
+        font-size: 22px;
+        cursor: pointer;
+    }    
+    .nav-bar .fas {
+        display: block;
+        color: rgb(250, 250, 250);
+        margin: 10px 5px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+    }
+    
+    .nav-links ul a {
+        display: block;
+    }
+    .nav-links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px ;
     }
 }
