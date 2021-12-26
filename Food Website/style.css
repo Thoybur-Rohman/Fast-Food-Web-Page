@@ -49,7 +49,7 @@
     background: yellow;
     display: block;
     margin: auto;
-    transition: .7s;/* speed of the transition*/
+    transition: .7s; /* speed of the transition*/
 }  
 .nav-links ul li:hover::after{
     width: 100%;
@@ -69,8 +69,34 @@
 
 /*------------------------------------------========= Banner  ==========-----------------------------------------------*/
 .banner-tittle{
-    margin: 80px 130px;
+    margin: 100px 130px; /* This algning the banner*/
     color: #fff;
+}
+.banner-tittle h1{
+    font-size: 64px; /* This algning the banner*/
+    margin-bottom: 20px;
+}
+.banner-tittle h1 span{
+    color: yellow;
+}
+
+.v-bar{
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.seach-icon{
+    height: 60%;
+    width: 80px;
+}
+.seach-icon .fas{
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
